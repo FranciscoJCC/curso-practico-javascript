@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso práctico de javascript</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Figuras geométricas</h1>
+
+      <div class="row mt-5">
+        
+        <div class="col-4">
+            <h4>Calcular medidas del cuadrado</h4>
+          <form>
+            <div class="mb-3">
+              <label for="ladoCuadrado" class="form-label">Escribe cuánto mide el lado del cuadrado</label>
+              <input
+                type="number"
+                class="form-control"
+                id="ladoCuadrado"
+                aria-describedby="ladoCuadrado"
+              />
+            </div>
+            <button type="button" onclick="calcularPerimetroCuadrado()" class="btn btn-primary">Calcula perimetro</button>
+            <button type="button" onclick="calcularAreaCuadrado()" class="btn btn-primary">Calcula area</button>
+          </form>
+        </div>
+
+        <div class="col-4">
+            <h4>Calcular medidas del circulo</h4>
+          <form>
+            <div class="mb-3">
+              <label for="radioCirculo" class="form-label">Escribe cuánto mide el radio del circulo</label>
+              <input
+                type="number"
+                class="form-control"
+                id="radioCirculo"
+                aria-describedby="radioCirculo"
+              />
+            </div>
+            <button type="button" onclick="calcularDiametroCirculo()" class="btn btn-primary">Calcula diametro</button>
+            <button type="button" onclick="calcularPerimetroCirculo()" class="btn btn-primary">Calcula perimetro</button>
+            <button type="button" onclick="calcularAreaCirculo()" class="btn btn-primary mt-3">Calcula area</button>
+          </form>
+        </div>
+        
+        <div class="col-4">
+            <h4>Calcular medidas del triangulo</h4>
+          <form>
+            <div class="mb-3">
+              <label for="lado1Triangulo" class="form-label">Escribe cuánto mide el lado 1</label>
+              <input
+                type="number"
+                class="form-control"
+                id="lado1Triangulo"
+                aria-describedby="lado1Triangulo"
+              />
+            </div>
+            <div class="mb-3">
+                <label for="lado2Triangulo" class="form-label">Escribe cuánto mide el lado 2</label>
+                <input
+                    type="number"
+                    class="form-control"
+                    id="lado2Triangulo"
+                    aria-describedby="lado2Triangulo"
+                />
+            </div>
+
+            <div class="mb-3">
+                <label for="baseTriangulo" class="form-label">Escribe cuánto mide la base</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="baseTriangulo"
+                  aria-describedby="baseTriangulo"
+                />
+            </div>
+            <div class="mb-3">
+                <label for="alturaTriangulo" class="form-label">Escribe cuánto mide la altura</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="alturaTriangulo"
+                  aria-describedby="alturaTriangulo"
+                />
+            </div>
+            <button type="button" onclick="calcularPerimetroTriangulo()" class="btn btn-primary">Calcula perimetro</button>
+            <button type="button" onclick="calcularAreaTriangulo()" class="btn btn-primary">Calcula area</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./figuras.js"></script>
+  </body>
+</html>

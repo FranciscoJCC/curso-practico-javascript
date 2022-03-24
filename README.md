@@ -16,3 +16,10 @@ Curso de platzi: Javascript Práctico.
 - Segundo paso: implementar las fórmulas en js
 - Tercer paso : Crear funciones
 - Cuarto paso : conectar a HTML con js
+
+
+## Taller #2 Promedio, Mediana y Moda
+- Primer paso : definir las fórmulas
+- Segundo paso: implementar las fórmulas en js
+- Tercer paso : Crear funciones
+- Cuarto paso : conectar a HTML con js
